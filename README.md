@@ -1,2 +1,2 @@
-# Activitat1
-Activitat 1 - CPSOC
+# Pràctiques
+Pràctiques - CPSOC
