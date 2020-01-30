@@ -1,0 +1,83 @@
+ *{
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            font-family: 'Kalam', cursive;
+            font-size: 1.2rem;
+            background-color: #f3f3f3;
+            color:#929292;
+        }
+
+        #galeria {
+            margin: 15px auto;
+            width:100%;
+            max-width:1248px;
+            box-sizing: border-box;
+            
+            column-count: 3;
+
+            /* Espai entre columnes */
+            column-gap: 15px;
+        }
+
+        article {
+            background:#fff;
+            border-radius:5px;
+            border:1px solid #ccc;
+            margin:0 0 15px 0;
+            text-align: center;
+            max-width: 100%;
+
+
+            /*Evitar el tall al canvi de columna*/
+            break-inside: avoid;
+            page-break-inside: avoid;         
+        }
+        
+        article img {
+            width:100%;
+        }
+
+        figure {
+            padding:1rem;
+            box-sizing: border-box;
+        }
+
+        figure img{
+            filter:grayscale(1);
+            transition: filter 2s;
+        }
+
+        figure img:hover{
+            filter:grayscale(0);
+        }
+        
+        figure figcaption{
+            margin-top:0.8rem;
+        }
+
+        p{
+            padding-top:30px;
+            color:#000;
+            font-size:3em;
+            text-align:center;
+        }
+
+ 
+        /* Tablet dues columnes */
+        @media (max-width: 767px) { 
+            #galeria {
+                columns:2;
+            }
+
+        }
+        
+        /* Movil 1 sola columna */
+
+        @media (max-width: 480px) {
+            #galeria {
+                columns: 1;
+            }
+        }
