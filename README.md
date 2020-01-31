@@ -1,2 +1,2 @@
-# Pràctiques
-Pràctiques - CPSOC
+# Practiques
+Practiques - CPSOC
